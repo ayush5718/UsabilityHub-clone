@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+body{
+    font-family: 'Poppins','sans-serif';
+    color:var(--primary-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size:1.5rem;
+}
+p{
+    font-family: 'Roboto','sans-serif';
+    font-size:1.25rem;
+    color:var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+.container{
+    
+    max-width:1180px;
+    margin-inline:auto;
+    padding-inline:var(--padding-inline-section);
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+.secondary-button:hover{
+    border-color:var(--accent-color);
+    color:var(--accent-color) !important;
+}
+/* css code for top blue coloured banner  */
+    /*code for banner bg-img */
+.top-banner
+{
+    background-image: url(img/asset\ 30.png);
+    background-color: #e74694;
+    background-size: 300px;
+}  
+     /*code for banner text*/
+.banner-text{
+    padding:15px 30px;
+    color:white;
+    text-align: center;
+    
+}
+     /*code to bold text in banner*/
+.bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* code for nav bar in webpage  */
+.main-nav{
+    margin-top:20px;
+    justify-content: space-between;
+    /* display: flex; */
+}
+.company-logo img{
+    width:200px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:var(--primary-text-color);
+}
+ul{
+    /* justify-content: end; */
+    /* display:flex; */
+    /* align-items: center; */
+    gap:40px;
+    list-style: none;
+}
+.nav-toogle{
+    display: none;
+}
+
+.hover-link{
+    color:var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-link:hover{
+    color:var(--accent-color);
+}
+header{
+  padding:50px var(--padding-inline-section);
+}
+.header-section{
+    /* border:2px solid red; */
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+
+}
+.p-header{
+    margin-bottom:30px;
+}
+.header-left{
+    
+}
+.header-right img{
+    width:100%;
+}
+.get-started-btn{
+    margin-top:20px;
+}
+
+/* code for featured section  */
+
+.companies-header{
+    text-align: center;
+    margin-block:30px;
+}
+.logos {
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    gap: 20px;
+}
+.logos img{
+    height:46px;
+
+}
+
+/* features-section */
+.features-section{
+    padding:80px var(--padding-inline-section);
+    background-image: url(img/asset\ 32.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-header{
+    text-align: center;
+   
+}
+.features-area{
+    margin-top:20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+    
+}
+
+.features-card{
+    
+    flex-direction: column;
+    gap:20px;
+    max-width: 30%;
+    text-align: center;
+   
+}
+.features-card img{
+    width:60px;
+}
+
+/* big-feature-section css */
+.big-feature-section{
+    padding:30px var(--padding-inline-section);
+    
+}
+.big-feature-container{
+    gap:40px;
+    
+}
+#second-big-feature{
+    flex-direction: row-reverse;
+}
+
+.feature-img img{
+    width:100%;
+}
+.feature-text{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+}
+
+/* example section css  */
+.example-header{
+    margin:50px 0px 40px 0px;
+}
+.examples-area{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.examples-card{
+    width:23%;
+    position:relative;
+    min-height: 300px;
+    background: black;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(img/asset\ 35.jpeg);
+    background-size: cover; 
+    transition: 0.3s ease-out;
+    flex-wrap: wrap;
+
+}
+.examples-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(img/asset\ 34.jpeg);
+    background-size: cover;
+}
+.examples-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(img/asset\ 36.jpeg);
+    background-size: cover;
+}
+.examples-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(img/asset\ 37.jpeg);
+    background-size: cover;
+}
+.examples-card:hover{
+    box-shadow: 0px 0px 10px #888;
+}
+.card-text{
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    right: 20px;
+    color:white;
+}
+
+/* cta section css  */
+.cta-section{
+    background-color: #183b54;
+}
+.cta-section-header{
+    margin-top:50px;
+    width:100vw;
+    height:60vh;
+    color:white !important;
+    background-color: var(--primary-text-color);
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    align-items: center;
+
+    
+}
+
+/* footer-section css  */
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+.footer-container{
+    /* padding-block: 80px var(--padding-inline-section); */
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.link-column{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: space-between;
+    
+}
+
+/* sub-footer css  */
+.sub-footer{
+    background-color: #b9cde4; 
+    padding-block: 20px var(--padding-inline-section);
+    
+}
+.sub-footer-container{
+    /* justify-content: space-around; */
+    gap:20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+   /* padding:20px; */
+
+}
